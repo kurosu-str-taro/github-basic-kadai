@@ -1,35 +1,35 @@
-kurosuremi@kurosureihitsujinoMacBook-Air ~ % pwd
-/Users/kurosuremi
-kurosuremi@kurosureihitsujinoMacBook-Air ~ % mkdir git_kadai1
-kurosuremi@kurosureihitsujinoMacBook-Air ~ % cd git_kadai1
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % git init
-Initialized empty Git repository in /Users/kurosuremi/git_kadai1/.git/
+Step1～4で実行したコマンド履歴
+
 kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % mkdir git_challenge
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % git remote add origin git@github.com:kurosu-str-taro/github-basic-kadai.git
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % git remote -v
-origin	git@github.com:kurosu-str-taro/github-basic-kadai.git (fetch)
-origin	git@github.com:kurosu-str-taro/github-basic-kadai.git (push)
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % git add git_challenge
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % git add git_challenge
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % git commit -m “hello_world.txtを追加”
-[main (root-commit) f9e4aa2] “hello_world.txtを追加”
+
+kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % cd git_challenge
+kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % git init
+Initialized empty Git repository in /Users/kurosuremi/git_kadai1/git_challenge/.git/
+kurosuremi@Mac kadai_005 % 
+
+kurosuremi@Mac git_challenge % echo 'Hello, World!' >> hello_world.txt
+
+kurosuremi@Mac git_challenge % git add hello_world.txt
+kurosuremi@Mac git_challenge % git commit -m 'hello_world.txtを追加'
+[main (root-commit) 2d1e62a] hello_world.txtを追加
  1 file changed, 1 insertion(+)
- create mode 100644 git_challenge/hello_world.txt
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % git add git_challenge
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % git commit -m “日本語訳を 追記""
-[main 80e2153] “日本語訳を追記
- 1 file changed, 2 insertions(+), 1 deletion(-)
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % git log
-commit 80e21534cec35e71598bd31a7f108ea7709a0ae6 (HEAD -> main)
-Author: kurosu-str-taro <“kurosuremi@gmaii.com”>
-Date:   Mon Mar 10 19:32:23 2025 +0900
+ create mode 100644 hello_world.txt
+kurosuremi@Mac git_challenge % 
+kurosuremi@Mac git_challenge % git add hello_world.txt 
+kurosuremi@Mac git_challenge % git commit -m '日本語訳を追記'
+[main 57627e6] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+kurosuremi@Mac git_challenge % 
 
-    “日本語訳を追記
+kurosuremi@Mac git_challenge % git log --oneline
+57627e6 (HEAD -> main) 日本語訳を追記
+2d1e62a hello_world.txtを追加
 
-commit f9e4aa25411716af007ab92156c7cb8834be7d6a
-Author: kurosu-str-taro <“kurosuremi@gmaii.com”>
-Date:   Mon Mar 10 19:31:44 2025 +0900
+kurosuremi@Mac git_challenge % cd ..
+kurosuremi@Mac git_kadai1 % mkdir kadai_005
+kurosuremi@Mac kadai_005 % git init                             
+Initialized empty Git repository in /Users/kurosuremi/git_kadai1/kadai_005/.git/
+kurosuremi@Mac kadai_005 % 
 
-    “hello_world.txtを追加”
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % mkdir kadai_005
-kurosuremi@kurosureihitsujinoMacBook-Air git_kadai1 % 
+kurosuremi@Mac git_kadai1 % cd kadai_005
+kurosuremi@Mac git_kadai1 % echo 'Step1～4で実行したコマンド履歴' >> kadai_005.txt
