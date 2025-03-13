@@ -1,0 +1,26 @@
+Step1～4で実行したコマンド履歴
+
+kurosuremi@Mac git_kadai3 % mkdir git_challenge
+kurosuremi@Mac git_kadai3 % cd git_challenge
+kurosuremi@Mac git_challenge % git init 
+Initialized empty Git repository in /Users/kurosuremi/git_kadai1/git_kadai3/git_challenge/.git/
+kurosuremi@Mac git_challenge % echo 'Hello,world!' >> hello_world.txt
+kurosuremi@Mac git_challenge % git add hello_world.txt
+kurosuremi@Mac git_challenge % git commit -m 'hello_world.txtを追加'
+[main (root-commit) 39edd67] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+kurosuremi@Mac git_challenge % echo 'こんにちは、世界！' >> hello_world.txt
+kurosuremi@Mac git_challenge % git add hello_world.txt
+kurosuremi@Mac git_challenge % git commit -m '日本語訳を追記'
+[main 995e609] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+kurosuremi@Mac git_challenge % git log --l
+fatal: unrecognized argument: --l
+kurosuremi@Mac git_challenge % git log --oneline 
+995e609 (HEAD -> main) 日本語訳を追記
+39edd67 hello_world.txtを追加
+kurosuremi@Mac git_challenge % cd ..
+kurosuremi@Mac git_kadai3 % mkdir kadai_005    
+kurosuremi@Mac git_kadai3 % cd kadai_005
+kurosuremi@Mac kadai_005 % echo 'Step1～4で実行したコマンド履歴' >> kadai_005.txt
